@@ -2,8 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import '../css/MainVisual.scss';
+import { BsCarFrontFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
-const MainVisual = ({ D_CONTENTS }) => {
+const MainVisual = ({ DEFAULT, D_CONTENTS }) => {
     const settings = {
         arrows: false,
         afterChange: idx => setSNum(idx)
@@ -36,11 +38,22 @@ const MainVisual = ({ D_CONTENTS }) => {
                     })
                 }
             </Slider>
+
             <div className="arrows">
                 {console.log(s.current)}
                 <button onClick={() => s.current.slickPrev()} className='prev'>뒤로가기</button>
                 <button onClick={() => s.current.slickNext()} className='next'>앞로가기</button>
             </div>
+
+            <div className="parking">
+                <Link to="/">
+                    <div className="parking_tit">
+                        <h3>{DEFAULT.parking}</h3> <BsCarFrontFill className="icon" />
+                    </div>
+                </Link>
+            </div>
+
+
         </section>
     )
 }

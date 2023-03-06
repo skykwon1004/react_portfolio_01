@@ -2,7 +2,9 @@ export const DEFAULT = {
     company: '유타몰',
     tel: '02)925-9999',
     address: '서울시 성북구 동소문로 106(동선동 1가)',
-    ceo: '하용락'
+    ceo: '하용락',
+    parking: '유타몰 주차장 안내',
+    more: '자세히보기'
 }
 
 export const D_CONTENTS = [
