@@ -1,0 +1,64 @@
+Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: rgba(61, 61, 61, 0.3);
+    line-height: 100px;
+
+
+    h1 {
+        width: 160px;
+        font-size: 0;
+    }
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+
+}
+
+
+.GlobalGnb {
+    &>ul {
+        display: flex;
+        gap: 50px;
+
+        &>li {
+            line-height: 100px;
+        }
+
+        ul {
+            display: none;
+            position: absolute;
+            inset: 100px auto auto 50%;
+            transform: translate(-50%, -20px);
+            line-height: 40px;
+            background: #f7f7f7;
+
+            width: 120px;
+            text-align: center;
+            color: #333;
+            font-size: 13px;
+
+            li~li {
+                border-top: 1px solid #ddd;
+            }
+        }
+
+        &>li {
+            position: relative;
+
+            &:hover ul {
+                display: block;
+            }
+
+            a {
+                display: block;
+            }
+        }
+    }
+}

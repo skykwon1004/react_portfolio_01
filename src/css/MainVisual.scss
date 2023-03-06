@@ -1,0 +1,83 @@
+.MainVisual {
+    // 슬라이드 깜박임 제거...
+    .slick-track,
+    .slick-list {
+        transition-delay: 30ms;
+    }
+
+    .itm {
+        position: relative;
+        height: 100vh;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: rgba(10, 10, 10, 0.3);
+        }
+
+        .inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+
+            h2 {
+                font-size: 65px;
+                font-weight: 700;
+                margin: 0 0 20px 0;
+                text-shadow: 0 1px 2px rgb(0, 0, 0, 0.6);
+            }
+
+            p {
+                font-size: 25px;
+                font-weight: 500;
+                text-shadow: 0 0 1px rgb(0, 0, 0, 1);
+            }
+
+        }
+    }
+
+    .itm01 {
+        background: url(../../public/assets/main01.jpg) no-repeat center center/cover;
+    }
+
+    .itm02 {
+        background: url(../../public/assets/main02.jpg) no-repeat center center/cover;
+    }
+
+    .arrows>* {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        font-size: 0;
+        border: none;
+        outline: none;
+        background: transparent;
+
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+
+
+        &.prev {
+            margin: 0 0 0 -800px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        &.next {
+            margin: 0 0 0 800px;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+    }
+
+
+}
