@@ -32,6 +32,11 @@ Header {
             line-height: 100px;
         }
 
+        &>li:hover {
+            transition: 0.5s;
+            color: #00d0ff;
+        }
+
         ul {
             display: none;
             position: absolute;

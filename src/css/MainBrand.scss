@@ -1,0 +1,67 @@
+.MainBrand {
+    h2 {
+        font-size: 51px;
+        font-weight: 700;
+        margin: 0 0 30px 0;
+    }
+
+    h2::after {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: #00d0ff;
+        border-radius: 50%;
+        margin: 0 0 0 15px;
+    }
+
+    .MainBrand_itm {
+        display: flex;
+        gap: 30px;
+
+        ul {
+            background: #f9f9f9;
+            padding: 100px 30px;
+            border-radius: 20px;
+            flex: 1;
+            text-align: center;
+            transition: 0.8s;
+            user-select: none;
+
+            .title {
+                font-size: 21px;
+                margin: 0 0 5px 0;
+            }
+
+            .number {
+                font-size: 41px;
+                font-weight: 700;
+                margin: 0 0 20px 0;
+                line-height: 1.4;
+                word-break: keep-all;
+            }
+
+            .desc {
+                font-size: 17px;
+                line-height: 1.4;
+                word-break: keep-all;
+            }
+        }
+
+        .bg0:hover {
+            background: url(../../public/assets/brand01.jpg) no-repeat center center/cover;
+            color: #fff;
+        }
+
+        .bg1:hover {
+            background: url(../../public/assets/brand02.jpg) no-repeat center center/cover;
+            color: #fff;
+        }
+
+        .bg2:hover {
+            background: url(../../public/assets/brand03.jpg) no-repeat center center/cover;
+            color: #fff;
+        }
+
+    }
+}

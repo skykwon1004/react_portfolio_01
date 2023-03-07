@@ -46,7 +46,7 @@ img {
 
 body {
     line-height: 1;
-    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+    font-family: 'Pretendard', 'Roboto', 'Noto Sans KR', sans-serif;
 }
 
 .cf::after,
@@ -60,4 +60,8 @@ body {
 .inner {
     width: 1200px;
     margin: 0 auto;
+}
+
+.sec {
+    padding: 100px 0;
 }

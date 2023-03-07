@@ -56,3 +56,37 @@ export const NAV = [
         link: '/',
     },
 ]
+
+export const SECTION = [
+    {
+        id: '1',
+        title: 'About Uta Mall',
+    },
+
+    {
+        id: '2',
+        title: 'Our Brands',
+    },
+    
+]
+
+export const BRAND_ITM = [
+    {
+        id:1,
+        title:'성북의 중심 랜드마크',
+        number:'SINCE 2009년',
+        desc:'2009년 쇼핑몰 오픈부터 지금까지, 앞으로도 지역과 함께 성장하는 유타쇼핑몰이 되겠습니다.'
+    },
+    {
+        id:2,
+        title:'복합 문화 쇼핑몰',
+        number:'총 16층',
+        desc:'지하 2층부터 14층까지 총 16층 복합 문화 쇼핑몰, 편리한 주차시설을 제공합니다.'
+    },
+    {
+        id:3,
+        title:'초역세권 쇼핑몰',
+        number:'초역세권 4호선',
+        desc:'지하철 4호선 성신여대입구역과 연결되어 있는 초역세권 복합 문화 쇼핑몰입니다.'
+    },
+]
