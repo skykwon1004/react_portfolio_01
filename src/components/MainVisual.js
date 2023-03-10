@@ -2,12 +2,16 @@ import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import '../css/MainVisual.scss';
-import { BsCarFrontFill } from "react-icons/bs";
+import { BsCarFrontFill, BsFillArrowDownCircleFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const MainVisual = ({ DEFAULT, D_CONTENTS }) => {
     const settings = {
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        pauseOnHover: false,
+        pauseOnFocus: false,
         afterChange: idx => setSNum(idx)
     }
 
@@ -43,6 +47,10 @@ const MainVisual = ({ DEFAULT, D_CONTENTS }) => {
                 {console.log(s.current)}
                 <button onClick={() => s.current.slickPrev()} className='prev'>뒤로가기</button>
                 <button onClick={() => s.current.slickNext()} className='next'>앞로가기</button>
+            </div>
+
+            <div className="scroll">
+                scroll down
             </div>
 
             <div className="parking">

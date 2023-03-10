@@ -5,6 +5,7 @@ import MainBrand from "./components/MainBrand";
 import MainBanner from "./components/MainBanner";
 import MainInformation from "./components/MainInformation";
 import Footer from "./components/Footer";
+import ToTop from "./components/ToTop";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <MainBanner CGV={CGV} />
       <MainInformation DEFAULT={DEFAULT} SECTION={SECTION} NOTICE={NOTICE} />
       <Footer FOOTER={FOOTER} />
+      <ToTop />
     </>
   )
 }

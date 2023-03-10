@@ -90,29 +90,43 @@
 
     }
 
+    .scroll {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        font-size: 17px;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 0.2em;
+    }
+
     .parking {
         position: absolute;
         bottom: 0;
         left: 50%;
-        transform: translate(-50%, 0);
-        background: rgb(0, 0, 0, 0.6);
+        transform: translate(-100%, 0);
+        margin: 0 0 0 600px;
+        // background: rgb(0, 0, 0, 0.6);
+        background: #ff5a2b;
         // color: #00d0ff;
         color: #fff;
-        border-radius: 20px 20px 0 0;
+        // border-radius: 20px 20px 0 0;
 
         .parking_tit {
-            padding: 25px 80px 20px 80px;
+            padding: 20px 40px 15px 45px;
             text-align: center;
             display: flex;
 
             h3 {
                 padding: 0 20px 0 0;
-                font-size: 18px;
+                font-size: 17px;
 
             }
 
             .icon {
-                font-size: 23px;
+                font-size: 21px;
                 margin: -3px 0 0 0;
             }
 
