@@ -1,4 +1,18 @@
 Header {
+
+    &.on {
+        background: rgb(0, 0, 0, 0.8);
+        border-bottom: none;
+        line-height: 80px;
+        transition: 0.3s;
+    }
+
+    &.on .GlobalGnb {
+        ul {
+            inset: 85px auto auto 50%;
+        }
+    }
+
     position: fixed;
     top: 0;
     left: 0;
@@ -28,12 +42,7 @@ Header {
         display: flex;
         gap: 50px;
 
-        &>li {
-            line-height: 100px;
-        }
-
         &>li:hover {
-            transition: 0.5s;
             color: #00d0ff;
         }
 
@@ -43,12 +52,13 @@ Header {
             inset: 100px auto auto 50%;
             transform: translate(-50%, -20px);
             line-height: 40px;
-            background: #f7f7f7;
+            background: #f9f9f9;
 
             width: 120px;
             text-align: center;
             color: #333;
             font-size: 13px;
+            font-weight: 500;
 
             li~li {
                 border-top: 1px solid #ddd;
@@ -68,3 +78,5 @@ Header {
         }
     }
 }
+
+//https://iancoding.tistory.com/224

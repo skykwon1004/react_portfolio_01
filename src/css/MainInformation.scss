@@ -1,0 +1,164 @@
+.MainInformation {
+    h2 {
+        font-size: 51px;
+        font-weight: 700;
+        margin: 0 0 30px 0;
+    }
+
+    h2::after {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: #00d0ff;
+        border-radius: 50%;
+        margin: 0 0 0 15px;
+    }
+
+    .infor_wrapper {
+        display: flex;
+        gap: 30px;
+
+        .left {
+            flex: 1;
+            border: 1px solid #eee;
+            padding: 20px 30px;
+            border-radius: 20px;
+        }
+
+        .right {
+            display: flex;
+            flex: 1;
+            gap: 15px;
+            text-align: center;
+            color: #fff;
+
+            .tel_icon {
+                font-size: 29px;
+                margin: 0 0 30px 0;
+            }
+
+            .map_icon {
+                font-size: 29px;
+                margin: 0 0 30px 0;
+            }
+
+            .tel {
+                position: relative;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #eee;
+                border-radius: 20px;
+                background: url(../../public/assets/infor01.jpg) no-repeat center center/cover;
+
+                padding: 0 50px;
+            }
+
+            .tel::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                background: linear-gradient(-90deg, #00d0ff, #0071bf);
+                border-radius: 20px;
+                opacity: 0.5;
+            }
+
+            .address {
+                position: relative;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #eee;
+                border-radius: 20px;
+                background: url(../../public/assets/infor02.jpg) no-repeat center center/cover;
+
+                padding: 0 50px;
+            }
+
+            .address::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                background: linear-gradient(-90deg, #00d0ff, #0071bf);
+                border-radius: 20px;
+                opacity: 0.5;
+            }
+
+            a {
+                position: relative;
+                z-index: 999;
+            }
+
+            strong {
+                display: block;
+                margin: 0 0 20px 0;
+                font-size: 27px;
+                font-weight: 700;
+                min-height: 20px;
+                // text-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+            }
+
+            span {
+                display: block;
+                word-break: keep-all;
+                line-height: 1.4;
+                min-height: 50px;
+                font-size: 17px;
+                // text-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+            }
+
+
+
+
+
+        }
+
+        .notice_wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .notice {
+            display: block;
+            font-size: 21px;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            line-height: 40px;
+            // border-bottom: 1px solid #eee;
+        }
+
+        .notice_icon {
+            font-size: 21px;
+            color: #777;
+            line-height: 40px;
+        }
+
+        .notice_wrapper:hover .notice_icon {
+            color: #00d0ff;
+            transition: 0.5s;
+        }
+
+        li {
+            line-height: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li:hover {
+            color: #777;
+            transition: 0.5s;
+        }
+
+    }
+}

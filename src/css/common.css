@@ -65,3 +65,14 @@ body {
 .sec {
     padding: 100px 0;
 }
+
+.btn {
+    background: #ed3124;
+    border: none;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}

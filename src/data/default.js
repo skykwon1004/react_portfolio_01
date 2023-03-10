@@ -1,10 +1,13 @@
 export const DEFAULT = {
     company: '유타몰',
-    tel: '02)925-9999',
-    address: '서울시 성북구 동소문로 106(동선동 1가)',
+    tel: '02) 925-9999',
+    tel_text: '문의전화',
+    address: '서울시 성북구 동소문로 106 (동선동 1가)',
+    address_text: '오시는 길',
     ceo: '하용락',
     parking: '유타몰 주차장 안내',
-    more: '자세히보기'
+    more: '자세히 보기',
+    notice: '공지사항'
 }
 
 export const D_CONTENTS = [
@@ -65,7 +68,7 @@ export const SECTION = [
 
     {
         id: '2',
-        title: 'Our Brands',
+        title: 'More Information',
     },
     
 ]
@@ -90,3 +93,32 @@ export const BRAND_ITM = [
         desc:'지하철 4호선 성신여대입구역과 연결되어 있는 초역세권 복합 문화 쇼핑몰입니다.'
     },
 ]
+
+export const CGV = [
+    {
+        id:1,
+        title:'영화 그 이상의 감동',
+        desc:'CGV는 선진화된 관람문화와 최고의 서비스로 고객에게 잊을 수 없는 감동을 선사합니다.'
+    }
+]
+
+export const NOTICE = {
+    title: 'Notice',
+    content: [
+        {id:1, subject:'2023년 설 연휴 유타몰 매장 휴무 안내', date:'2023.01.18'},
+        {id:2, subject:'2022년 설 연휴 유타몰 매장 휴무 안내', date:'2022.02.11'},
+        {id:3, subject:'2021년 추석 연휴 유타몰 휴무 안내', date:'2022.02.11'},
+        {id:4, subject:'2021년 설 연휴 유타몰 매장 휴무 안내', date:'2022.02.11'},
+        {id:5, subject:'신종 코로나 사태 관련 방역 조치 완료 안내', date:'2022.02.11'},
+    ]
+}
+
+export const FOOTER = {
+    service: [
+        { title: '온라인 고객 서비스 02)925-9999'},
+        { title: '상호 (주)유타몰'},
+        { title: '대표자 성명 하용락'},
+        { title: '서울시 성북구 동소문로 106(동선동 1가)'},
+        { title: '사업자등록번호 186-81-00211'},
+    ],
+}

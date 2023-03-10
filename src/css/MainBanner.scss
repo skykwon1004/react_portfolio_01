@@ -1,0 +1,37 @@
+.MainBanner {
+    height: 300px;
+    background: url(../../public/assets/banner.png) no-repeat fixed center center/cover;
+
+    .inner {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            font-size: 35px;
+            font-weight: 700;
+            color: #fff;
+            margin: 0 0 15px 0;
+            text-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+        }
+
+        h2::after {
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #00d0ff;
+            border-radius: 50%;
+            margin: 0 0 0 15px;
+        }
+
+        p {
+            font-size: 19px;
+            color: #fff;
+            margin: 0 0 30px 0;
+            text-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+        }
+
+    }
+}
