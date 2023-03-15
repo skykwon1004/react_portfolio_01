@@ -6,15 +6,6 @@ const SubTitle = ({ NAV }) => {
     return (
         <section className="SubTitle">
             <div className="inner">
-                {/* {
-                    NAV.map((it, idx) => {
-                        return (
-                            <h2>
-                                {it.title}
-                            </h2>
-                        )
-                    })
-                } */}
                 <h2>{NAV[0].title}</h2>
             </div>
             <div className="SubMenuBar">
