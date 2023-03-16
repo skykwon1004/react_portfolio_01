@@ -1,14 +1,12 @@
 import { NAV, UTA_MALL_P } from "../data/default";
 import SubTitle from "../components/SubTitle";
-import UtaMall_Main from "../components/UtaMall_Main";
 
-const UtaMall = () => {
+const Contact = () => {
     return (
         <>
             <SubTitle NAV={NAV} />
-            <UtaMall_Main NAV={NAV} UTA_MALL_P={UTA_MALL_P}/>
         </>
     )
 }
 
-export default UtaMall;
+export default Contact;

@@ -1,11 +1,8 @@
 import '../css/SubTitle.scss';
 import { BsHouseDoorFill } from "react-icons/bs";
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 
 const SubTitle = ({ NAV }) => {
-    // const [subTitle, setSubTitle] = useState ('');
-
     return (
         <section className="SubTitle">
             <div className="inner">
