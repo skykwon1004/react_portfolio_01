@@ -1,10 +1,14 @@
 import '../css/SubTitle.scss';
 import { BsHouseDoorFill } from "react-icons/bs";
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useState } from 'react';
 
-const SubTitle = ({ NAV }) => {
-    // const [subTitle, setSubTitle] = useState ('');
+const SubTitle = ({ NAV, idx }) => {
+    const [subTitle, setSubTitle] = useState ('');
+   
+const {id} = useParams();
+const title = NAV.find(it => it.link === `/${id}`)
+
 
     return (
         <section className="SubTitle">
@@ -18,12 +22,12 @@ const SubTitle = ({ NAV }) => {
                         )
                     })
                 } */}
-                <h2>{NAV[0].title}</h2>
+                <h2>{title.title}</h2>
             </div>
             <div className="SubMenuBar">
                 <div class="inner">
                     <Link to="/"><BsHouseDoorFill className='Home' /></Link>
-                    <strong>{NAV[0].title}</strong>
+                    <strong>{title.title}</strong>
                 </div>
             </div>
         </section>

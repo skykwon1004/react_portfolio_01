@@ -5,7 +5,7 @@ import UtaMall_Main from "../components/UtaMall_Main";
 const UtaMall = () => {
     return (
         <>
-            <SubTitle NAV={NAV} />
+            <SubTitle NAV={NAV}/>
             <UtaMall_Main NAV={NAV} UTA_MALL_P={UTA_MALL_P}/>
         </>
     )
