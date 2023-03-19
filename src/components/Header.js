@@ -3,7 +3,7 @@ import GlobalNav from "./GlobalNav";
 import '../css/Header.scss';
 import { useEffect, useRef, useState } from 'react';
 
-const Header = ({NAV}) => {
+const Header = ({ NAV }) => {
     const HL = useRef();
     useEffect(() => {
         window.addEventListener("scroll", () => {

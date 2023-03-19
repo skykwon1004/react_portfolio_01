@@ -1,33 +1,23 @@
 import '../css/SubTitle.scss';
 import { BsHouseDoorFill } from "react-icons/bs";
 import { Link, useParams } from 'react-router-dom';
-import { useState } from 'react';
+
 
 const SubTitle = ({ NAV, idx }) => {
-    const [subTitle, setSubTitle] = useState ('');
-   
-const {id} = useParams();
-const title = NAV.find(it => it.link === `/${id}`)
-
+    const { sub } = useParams();
+    const navTitle = NAV.find(it => it.link === `/${sub}`)
 
     return (
-        <section className="SubTitle">
+        <section className="SubTitle" style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/' + sub + '.jpg'})`,
+        }}>
             <div className="inner">
-                {/* {
-                    NAV.map((it, idx) => {
-                        return (
-                            <h2>
-                                {it.title}
-                            </h2>
-                        )
-                    })
-                } */}
-                <h2>{title.title}</h2>
+                <h2>{navTitle.title}</h2>
             </div>
             <div className="SubMenuBar">
-                <div class="inner">
+                <div className="inner">
                     <Link to="/"><BsHouseDoorFill className='Home' /></Link>
-                    <strong>{title.title}</strong>
+                    <strong>{navTitle.title}</strong>
                 </div>
             </div>
         </section>

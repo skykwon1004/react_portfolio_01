@@ -1,7 +1,9 @@
 .SubTitle {
     position: relative;
     height: 400px;
-    background: url(../../public/assets/sub_title01.jpg) no-repeat center center/cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: #fff;
 
     h2 {
