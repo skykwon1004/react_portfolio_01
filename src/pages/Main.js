@@ -4,7 +4,7 @@ import MainBrand from "../components/MainBrand";
 import MainBanner from "../components/MainBanner";
 import MainInformation from "../components/MainInformation";
 
-const Main = () => {
+const Main = ({}) => {
     return (
         <>
             <MainVisual DEFAULT={DEFAULT} D_CONTENTS={D_CONTENTS} />

@@ -1,31 +1,22 @@
-import { DEFAULT, D_CONTENTS, NAV, SECTION, BRAND_ITM, CGV, NOTICE, FOOTER, UTA_MALL_P } from "./data/default";
-import { Link, NavLink, Route, Routes } from "react-router-dom"
-import Header from './components/Header';
-import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom"
 import ToTop from "./components/ToTop";
 import Main from "./pages/Main";
 import UtaMall from "./pages/UtaMall";
 import Contact from "./pages/Contact";
+import Home from "./Home";
 
 const App = () => {
   return (
     <>
-      <Header NAV={NAV} />
-
-
-
 
       <Routes>
-        <Route path="/" element={<Main />}></Route>
-        <Route path="/:sub" element={<UtaMall />}></Route>
-        <Route path="/:sub" element={<Contact />}></Route>
+        <Route path="/" element={<Home />}>  {/* header 와 footer를 고정 시킨것 Home */}
+          <Route index element={<Main />} />
+          <Route path="sub01" element={<UtaMall />} />{/* /sub01 갔을때 UtaMall 부분을 불러 Outlet씀 */}
+          <Route path="sub04" element={<Contact />} />
+        </Route>
       </Routes>
 
-
-
-
-
-      <Footer FOOTER={FOOTER} />
       <ToTop />
     </>
   )

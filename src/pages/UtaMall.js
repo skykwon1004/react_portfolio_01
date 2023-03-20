@@ -2,11 +2,11 @@ import { NAV, UTA_MALL_P } from "../data/default";
 import SubTitle from "../components/SubTitle";
 import UtaMall_Main from "../components/UtaMall_Main";
 
-const UtaMall = () => {
+const UtaMall = ({}) => {
     return (
         <>
-            <SubTitle NAV={NAV}/>
-            <UtaMall_Main NAV={NAV} UTA_MALL_P={UTA_MALL_P}/>
+            <SubTitle NAV={NAV} idx={0}/>
+            <UtaMall_Main NAV={NAV} UTA_MALL_P={UTA_MALL_P} />
         </>
     )
 }

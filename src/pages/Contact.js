@@ -1,10 +1,13 @@
-import { NAV, UTA_MALL_P } from "../data/default";
+import { NAV } from "../data/default";
 import SubTitle from "../components/SubTitle";
+import Test from "../components/Test";
+import KakaoMap from "../components/KakaoMap";
 
-const Contact = () => {
+const Contact = ({}) => {
     return (
         <>
-            <SubTitle NAV={NAV} />
+            <SubTitle NAV={NAV} idx={3} />
+            <KakaoMap />
         </>
     )
 }
