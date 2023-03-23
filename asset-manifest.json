@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react_portfolio_01/static/css/main.6a32f449.css",
-    "main.js": "/react_portfolio_01/static/js/main.02e9a3ad.js",
+    "main.css": "/react_portfolio_01/static/css/main.1dacda04.css",
+    "main.js": "/react_portfolio_01/static/js/main.ec1dc8da.js",
     "static/media/banner.png": "/react_portfolio_01/static/media/banner.0228eeb24e2a785172d5.png",
     "static/media/main02.jpg": "/react_portfolio_01/static/media/main02.b44342d8c9de7658f295.jpg",
     "static/media/main01.jpg": "/react_portfolio_01/static/media/main01.2ed6fd4242dd152447a3.jpg",
@@ -9,14 +9,13 @@
     "static/media/brand02.jpg": "/react_portfolio_01/static/media/brand02.4f6f7884fca052edd639.jpg",
     "static/media/brand01.jpg": "/react_portfolio_01/static/media/brand01.d4002818cf980ed59c66.jpg",
     "static/media/infor02.jpg": "/react_portfolio_01/static/media/infor02.6373bcdb8da074ae8478.jpg",
-    "static/media/sub_title01.jpg": "/react_portfolio_01/static/media/sub_title01.9106c512e572e13b48d7.jpg",
     "static/media/brand03.jpg": "/react_portfolio_01/static/media/brand03.384e28333c3bf5ef7306.jpg",
     "index.html": "/react_portfolio_01/index.html",
-    "main.6a32f449.css.map": "/react_portfolio_01/static/css/main.6a32f449.css.map",
-    "main.02e9a3ad.js.map": "/react_portfolio_01/static/js/main.02e9a3ad.js.map"
+    "main.1dacda04.css.map": "/react_portfolio_01/static/css/main.1dacda04.css.map",
+    "main.ec1dc8da.js.map": "/react_portfolio_01/static/js/main.ec1dc8da.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a32f449.css",
-    "static/js/main.02e9a3ad.js"
+    "static/css/main.1dacda04.css",
+    "static/js/main.ec1dc8da.js"
   ]
 }
