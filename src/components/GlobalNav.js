@@ -10,14 +10,14 @@ const GlobalNav = ({ NAV }) => {
                             <Link to={it.link}>{it.title}</Link>
                             {it.submenu ? <ul>
 
-                                {
-                                    it.submenu?.map((it, idx) => {
-                                        return (
-                                            <li key={idx}><Link to={it.link}>{it.title}</Link></li>
-                                        )
-                                    })
-                                }
-                            </ul> : null}
+                                                {
+                                                    it.submenu?.map((it, idx) => {
+                                                        return (
+                                                            <li key={idx}><Link to={it.link}>{it.title}</Link></li>
+                                                        )
+                                                    })
+                                                }
+                                            </ul> : null}
                         </li>
                     )
                 })

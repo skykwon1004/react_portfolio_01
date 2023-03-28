@@ -13,20 +13,18 @@ const KakaoMap = ({ NAV, DEFAULT, TOTAL_PARK }) => {
             <div className="address">
                 <div className="address_itm">
                     <strong>{DEFAULT.map}</strong>
-                    <ul>
-                        <li>{DEFAULT.address}</li>
-                    </ul>
+                    <span>{DEFAULT.address}</span>
                 </div>
                 <div className="address_itm">
                     <strong>{DEFAULT.parking}</strong>
                     <div>
                         {
-                            TOTAL_PARK?.map((it, idx) => {
+                            TOTAL_PARK.map((it, idx) => {
                                 return (
-                                    <ul>
-                                        <li>{it.title}</li>
-                                        <li>{it.desc}</li>
-                                    </ul>
+                                    <div className="park_text">
+                                        <div className="park_text_title">{it.title}</div>
+                                        <div className="park_text_desc">{it.desc}</div>
+                                    </div>
                                 )
                             })
                         }
