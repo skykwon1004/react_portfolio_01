@@ -1,0 +1,10 @@
+@mixin background($img, $h, $v) {
+    background: url($img) no-repeat $h $v/cover;
+}
+
+@mixin position($position, $top, $right, $bottom, $left, $zindex: auto) {
+    position: $position;
+    inset: $top $right $bottom $left;
+    z-index: $zindex;
+}
+

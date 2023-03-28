@@ -2,7 +2,7 @@ import '../css/UtaMall_Main.scss';
 
 const UtaMall_Main = ({ UTA_MALL_P, NAV }) => {
     return (
-        <section className="UtaMall_Main inner">
+        <section className="UtaMall_Main inner title">
             <h2>{NAV[0].title}</h2>
             <div className="UM_Content">
                 <div className="UM_Itm Top">

@@ -1,3 +1,5 @@
+@import './variable';
+
 .MainBrand {
     h2 {
         font-size: 51px;
@@ -10,7 +12,7 @@
         display: inline-block;
         width: 12px;
         height: 12px;
-        background: #00d0ff;
+        background: $mc;
         border-radius: 50%;
         margin: 0 0 0 15px;
     }
@@ -20,7 +22,7 @@
         gap: 30px;
 
         ul {
-            background: #f9f9f9;
+            background: $bg_color;
             padding: 100px 30px;
             border-radius: 20px;
             flex: 1;
@@ -50,17 +52,17 @@
 
         .bg0:hover {
             background: url(../../public/assets/brand01.jpg) no-repeat center center/cover;
-            color: #fff;
+            color: $w_color;
         }
 
         .bg1:hover {
             background: url(../../public/assets/brand02.jpg) no-repeat center center/cover;
-            color: #fff;
+            color: $w_color;
         }
 
         .bg2:hover {
             background: url(../../public/assets/brand03.jpg) no-repeat center center/cover;
-            color: #fff;
+            color: $w_color;
         }
 
     }

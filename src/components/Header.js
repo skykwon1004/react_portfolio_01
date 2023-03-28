@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 import GlobalNav from "./GlobalNav";
 import '../css/Header.scss';
 import { useEffect, useRef, useState } from 'react';

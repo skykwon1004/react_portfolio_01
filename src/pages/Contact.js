@@ -1,13 +1,12 @@
-import { NAV } from "../data/default";
+import { NAV, DEFAULT, TOTAL_PARK } from "../data/default";
 import SubTitle from "../components/SubTitle";
-import Test from "../components/Test";
 import KakaoMap from "../components/KakaoMap";
 
-const Contact = ({}) => {
+const Contact = ({ }) => {
     return (
         <>
             <SubTitle NAV={NAV} idx={3} />
-            <KakaoMap />
+            <KakaoMap NAV={NAV} DEFAULT={DEFAULT} TOTAL_PARK={TOTAL_PARK} />
         </>
     )
 }

@@ -1,0 +1,40 @@
+@import './variable';
+
+.KakaoMap {
+    .map {
+        width: auto;
+        height: 500px;
+        margin: 0 0 50px 0;
+    }
+
+    .address {
+        .address_itm {
+            margin: 0 0 50px 0;
+        }
+
+        strong {
+            display: block;
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 50px;
+            border-bottom: 1px solid #bbb;
+        }
+
+        strong::after {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: $mc;
+            border-radius: 50%;
+            margin: 0 0 0 8px;
+        }
+
+
+        ul>li {
+            font-size: 17px;
+            color: #555;
+            line-height: 40px;
+        }
+    }
+}

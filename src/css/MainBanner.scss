@@ -1,3 +1,5 @@
+@import './variable';
+
 .MainBanner {
     height: 400px;
     background: url(../../public/assets/banner.png) no-repeat fixed center center/cover;
@@ -11,7 +13,7 @@
         h2 {
             font-size: 35px;
             font-weight: 700;
-            color: #fff;
+            color: $w_color;
             margin: 0 0 15px 0;
             text-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
         }
@@ -21,14 +23,14 @@
             display: inline-block;
             width: 12px;
             height: 12px;
-            background: #00d0ff;
+            background: $mc;
             border-radius: 50%;
             margin: 0 0 0 15px;
         }
 
         p {
             font-size: 19px;
-            color: #fff;
+            color: $w_color;
             margin: 0 0 30px 0;
             text-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
         }
