@@ -13,19 +13,28 @@
 
             .park_text {
                 margin: 20px 0 0 0;
+                // outline: 1px solid red;
 
                 .park_text_title {
                     font-size: 19px;
+                    font-weight: 500;
                     margin: 0 0 10px 0;
                 }
 
                 .park_text_desc {
                     font-size: 15px;
-                    margin: 0 0 20px 0;
+                    color: #555;
+                    margin: 0 0 30px 0;
+                }
+
+                .park_text_desc03 {
+                    margin: 0;
                 }
             }
+        }
 
-
+        .bottom {
+            margin: 0;
         }
 
         strong {
@@ -33,7 +42,7 @@
             font-size: 21px;
             font-weight: 500;
             line-height: 50px;
-            border-bottom: 1px solid #bbb;
+            border-bottom: 1px solid #555;
         }
 
         strong::after {

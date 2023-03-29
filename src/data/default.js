@@ -33,26 +33,22 @@ export const NAV = [
     {
         id: '2',
         title: '유타몰안내',
-        link: '/',
+        link: '/sub02',
         submenu: [
             {
                 title: '공지사항',
-                link: '/sub',
+                link: '/sub02/notice',
             },
             {
                 title: '공개입찰',
-                link: '/sub',
+                link: '/sub02/bid',
             },
-            {
-                title: '관리비',
-                link: '/sub',
-            }
         ]
     },
     {
         id: '3',
         title: '층별안내',
-        link: '/',
+        link: '/sub03',
     },
     {
         id: '2',
