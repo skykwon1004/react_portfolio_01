@@ -39,21 +39,21 @@ const Btn = styled.button`
     font-family: 'Pretendard', 'Roboto', 'Noto Sans KR', sans-serif;
 `
 
-const View = ({ list, setList }) => {
+const ViewBid = ({ list_bid, setList_bid }) => {
     const { id } = useParams();
-    const itm = list.find(it => String(it.id) === id);
+    const itm = list_bid.find(it => String(it.id) === id);
 
     const navigate = useNavigate();
 
-    const onModify = () => {
-        navigate(`/sub02/modify/${id}`)
-    }
+    // const onModify = () => {
+    //     navigate(`/sub02/modify/${id}`)
+    // }
 
     const onDelete = () => {
         //list에서 id === id 를 제외한 새배열을 만들어서 삭제기능 구현
-        const r = list.filter(it => String(it.id) !== id)
-        setList(r)
-        navigate('/sub02/notice')
+        const r = list_bid.filter(it => String(it.id) !== id)
+        setList_bid(r)
+        navigate('/sub02/bid')
     }
 
     return (
@@ -78,11 +78,11 @@ const View = ({ list, setList }) => {
                 </Li>
             </Ul>
             <WriteBtn>
-                <Btn onClick={onModify}>수정하기</Btn>
+                {/* <Btn onClick={onModify}>수정하기</Btn> */}
                 <Btn onClick={onDelete}>삭제하기</Btn>
             </WriteBtn>
         </section>
     )
 }
 
-export default View;
+export default ViewBid;
