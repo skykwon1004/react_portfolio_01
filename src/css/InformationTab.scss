@@ -1,0 +1,46 @@
+@import './variable';
+
+* {
+    outline: 1px solid --red;
+}
+
+.tab_wrap {
+    .tab_menu {
+        font-weight: bold;
+        display: flex;
+        gap: 2px;
+        align-items: center;
+        list-style: none;
+        cursor: pointer;
+        border-bottom: 1px solid #ddd;
+
+        li {
+            padding: 12px 20px 10px 20px;
+            border-radius: 10px 10px 0px 0px;
+            background: #eee;
+        }
+
+        .submenu {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 20px 10px 20px;
+            border-radius: 10px 10px 0px 0px;
+            transition: 0.5s;
+
+            &.on {
+                background-color: $mc;
+            }
+        }
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        background: #f9f9f9;
+
+        font-size: 27px;
+        font-weight: 700;
+    }
+}

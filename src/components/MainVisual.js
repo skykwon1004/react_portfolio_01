@@ -54,7 +54,7 @@ const MainVisual = ({ DEFAULT, D_CONTENTS }) => {
             </div>
 
             <div className="parking">
-                <Link to="/">
+                <Link to="sub02/view/1">
                     <div className="parking_tit">
                         <h3>{DEFAULT.parking}</h3> <BsCarFrontFill className="icon" />
                     </div>

@@ -37,6 +37,7 @@ const Bid = ({ list_bid }) => {
     const natigate = useNavigate();
     return (
         <section className="title inner">
+            <h2>공개입찰</h2>
             <Table>
                 <Thead>
                     <Tr>
@@ -61,9 +62,9 @@ const Bid = ({ list_bid }) => {
                     }
                 </tbody>
             </Table>
-            <WriteBtn>
+            {/* <WriteBtn>
                 <Btn onClick={() => natigate('/sub02/write')}>글쓰기</Btn>
-            </WriteBtn>
+            </WriteBtn> */}
         </section>
     )
 }

@@ -2,7 +2,7 @@ import { NAV, DEFAULT, TOTAL_PARK } from "../data/default";
 import SubTitle from "../components/SubTitle";
 import KakaoMap from "../components/KakaoMap";
 
-const Contact = ({ }) => {
+const Contact = ({}) => {
     return (
         <>
             <SubTitle NAV={NAV} idx={3} />

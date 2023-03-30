@@ -37,6 +37,7 @@ const List = ({ list }) => {
     const natigate = useNavigate();
     return (
         <section className="title inner">
+            <h2>공지사항</h2>
             <Table>
                 <Thead>
                     <Tr>

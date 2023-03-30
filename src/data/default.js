@@ -148,3 +148,4 @@ export const TOTAL_PARK = [
         desc: '기본 30분 3,000원 이후 10분당 500원 부과',
     },
 ]
+

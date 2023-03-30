@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import '../css/MainInformation.scss';
 import { BsFillPlusSquareFill, BsFillMapFill, BsFillTelephoneFill } from "react-icons/bs";
-// import Map from './Map';
+
 
 const MainInformation = ({ SECTION, NOTICE, DEFAULT }) => {
     return (
@@ -12,8 +12,8 @@ const MainInformation = ({ SECTION, NOTICE, DEFAULT }) => {
                     <div className="left">
                         <ul>
                             <div className='notice_wrapper'>
-                                <Link to="" className='notice'>{DEFAULT.notice}</Link>
-                                <Link to="" className='notice_icon'><BsFillPlusSquareFill /></Link>
+                                <Link to="sub02" className='notice'>{DEFAULT.notice}</Link>
+                                <Link to="sub02" className='notice_icon'><BsFillPlusSquareFill /></Link>
                             </div>
                             {
                                 NOTICE.content.map((it, idx) => {
@@ -28,14 +28,14 @@ const MainInformation = ({ SECTION, NOTICE, DEFAULT }) => {
                     </div>
                     <div className="right">
                         <div className='tel'>
-                            <Link to="/">
+                            <Link to="sub04">
                                 <BsFillTelephoneFill className="tel_icon" />
                                 <strong>{DEFAULT.tel_text}</strong>
                                 <span>{DEFAULT.tel}</span>
                             </Link>
                         </div>
                         <div className='address'>
-                            <Link to="/">
+                            <Link to="sub04">
                                 <BsFillMapFill className="map_icon" />
                                 <strong>{DEFAULT.address_text}</strong>
                                 <span>{DEFAULT.address}</span>
