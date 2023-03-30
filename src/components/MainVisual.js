@@ -50,7 +50,7 @@ const MainVisual = ({ DEFAULT, D_CONTENTS }) => {
             </div>
 
             <div className="scroll">
-                scroll down
+                Scroll Down
             </div>
 
             <div className="parking">
