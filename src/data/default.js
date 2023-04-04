@@ -36,10 +36,12 @@ export const NAV = [
         link: '/sub02',
         submenu: [
             {
+                id:'01',
                 title: '공지사항',
                 link: '/sub02/notice',
             },
             {
+                id:'02',
                 title: '공개입찰',
                 link: '/sub02/bid',
             },

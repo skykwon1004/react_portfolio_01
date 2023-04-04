@@ -35,7 +35,7 @@ const InfotmationTab = () => {
                 <ul className='tab_menu'>
                     {
                         MenuArr.map((it, idx) => (
-                            <li className={idx === num ? "submenu on" : ""} onClick={() => selectMenuHandler(idx)}>
+                            <li className={idx === num ? "submenu on" : ""} onClick={() => selectMenuHandler(idx)} key={idx}>
                                 {it.name}
                             </li>
                         ))

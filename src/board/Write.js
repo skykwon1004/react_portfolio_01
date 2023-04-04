@@ -64,7 +64,7 @@ const Write = ({ list, setList, idRef }) => {
     const [inputs, setInputs] = useState({});
     const input = useRef([]);
 
-    console.log(inputs);
+    //console.log(inputs);
     const time = new Date();
 
     const inputHandler = e => {
@@ -79,7 +79,7 @@ const Write = ({ list, setList, idRef }) => {
         );
     }
 
-    console.log(input.current.length, input.current[0])
+    //console.log(input.current.length, input.current[0])
     const onSubmit = e => {
         e.preventDefault();
         for (let i = 0; i < input.current.length; i++) {

@@ -10,7 +10,7 @@ export const MainBrand = ({ SECTION, BRAND_ITM }) => {
                     {
                         BRAND_ITM.map((it, idx) => {
                             return (
-                                <ul className={`bg${idx}`}>
+                                <ul className={`bg${idx}`} key={it.id}>
                                     <li className='Main_title'>{it.title}</li>
                                     <li className='number'>{it.number}</li>
                                     <li className='desc'>{it.desc}</li>

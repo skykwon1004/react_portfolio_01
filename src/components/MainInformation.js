@@ -18,7 +18,7 @@ const MainInformation = ({ SECTION, NOTICE, DEFAULT }) => {
                             {
                                 NOTICE.content.map((it, idx) => {
                                     return (
-                                        <Link to="sub02">
+                                        <Link to="sub02" key={it.id}>
                                             <li><strong>{it.subject}</strong><span>{it.date}</span></li>
                                         </Link>
                                     )

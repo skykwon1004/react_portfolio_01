@@ -13,7 +13,7 @@ const GlobalNav = ({ NAV }) => {
                                                 {
                                                     it.submenu?.map((it, idx) => {
                                                         return (
-                                                            <li key={idx}><Link to={it.link}>{it.title}</Link></li>
+                                                            <li key={it.id}><Link to={it.link}>{it.title}</Link></li>
                                                         )
                                                     })
                                                 }

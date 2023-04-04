@@ -14,7 +14,7 @@ const Footer = ({ FOOTER }) => {
                             {
                                 FOOTER.service.map((it, idx) => {
                                     return (
-                                        <li>{it.title}</li>
+                                        <li key={idx}>{it.title}</li>
                                     )
                                 })
                             }

@@ -32,7 +32,7 @@ const MainVisual = ({ DEFAULT, D_CONTENTS }) => {
                 {
                     D_CONTENTS.map((it, idx) => {
                         return (
-                            <div className={`itm itm0${idx + 1}`}>
+                            <div className={`itm itm0${idx + 1}`} key={it.id}>
                                 <div className="inner">
                                     <h2>{it.title}</h2>
                                     <p>{it.desc}</p>
@@ -44,7 +44,7 @@ const MainVisual = ({ DEFAULT, D_CONTENTS }) => {
             </Slider>
 
             <div className="arrows">
-                {console.log(s.current)}
+                {/* {console.log(s.current)} */}
                 <button onClick={() => s.current.slickPrev()} className='prev'>뒤로가기</button>
                 <button onClick={() => s.current.slickNext()} className='next'>앞로가기</button>
             </div>

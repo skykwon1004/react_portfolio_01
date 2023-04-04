@@ -19,7 +19,7 @@ const KakaoMap = ({ NAV, DEFAULT, TOTAL_PARK }) => {
                         {
                             TOTAL_PARK.map((it, idx) => {
                                 return (
-                                    <div>
+                                    <div key={it.id}>
                                         <div className="park_text_title">{it.title}</div>
                                         <div className={`park_text_desc park_text_desc0${idx + 1}`}>{it.desc}</div>
                                     </div>
