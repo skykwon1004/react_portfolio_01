@@ -83,8 +83,8 @@ const Write = ({ list, setList, idRef }) => {
     const onSubmit = e => {
         e.preventDefault();
         for (let i = 0; i < input.current.length; i++) {
-            if (input.current[i].value.length < 5) {
-                alert(`${input.current[i].name}은 4자 이상 입력하세용`);
+            if (input.current[i].value.length < 2) {
+                alert(`${input.current[i].name}은 2자 이상 입력하세요`);
                 input.current[i].focus();
                 return
             }
